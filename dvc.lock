@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  convert:
+    cmd: python stages/convert.py --max-composition-rows 10000 --max-other-rows 
+      10000
+    deps:
+    - path: .bb/dependencies.txt
+      hash: md5
+      md5: a72ca1e93ab2bfdf133be669d08d7e48
+      size: 13
+    - path: stages/convert.py
+      hash: md5
+      md5: 2118c1ee3d674d406e87b920c062e39a
+      size: 9954
+    outs:
+    - path: brick/epa-chemexpo-rdf.nt.gz
+      hash: md5
+      md5: 02302cebed74a5e6a8e0cac6995091e0
+      size: 2793983
+    - path: reports/source-coverage.json
+      hash: md5
+      md5: 3fd5637edf55a76e6ad480629a43f055
+      size: 1280

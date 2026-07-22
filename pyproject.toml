@@ -1,0 +1,9 @@
+[project]
+name="epa-chemexpo-rdf"
+version="0.1.0"
+requires-python=">=3.11"
+dependencies=["biobricks>=0.3","pyarrow>=15","rdflib>=7"]
+[project.optional-dependencies]
+test=["pytest>=8"]
+[tool.pytest.ini_options]
+testpaths=["tests"]

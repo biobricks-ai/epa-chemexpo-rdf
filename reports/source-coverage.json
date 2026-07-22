@@ -1,0 +1,41 @@
+{
+  "bounded_build": true,
+  "chemical_rows": 10000,
+  "composition_row_coverage": 0.0027979470902609336,
+  "composition_rows": 10000,
+  "dictionary_rows": 341,
+  "evidence_boundary": "reported product composition intervals/central values and exposure-use context; values and unit_type preserved exactly as reported",
+  "full_source_rows": 4123009,
+  "full_source_table_rows": {
+    "chemicals": 40442,
+    "function_categories": 131,
+    "functional_use": 334297,
+    "list_presence": 173404,
+    "list_presence_keywords": 170,
+    "product_composition": 3574049,
+    "product_use_categories": 476,
+    "puc_attributes": 40
+  },
+  "functional_use_rows": 10000,
+  "list_presence_rows": 10000,
+  "mapped_nonempty_cells": 325125,
+  "n_hexane_composition_rows": 11,
+  "processed_field_mapping_coverage": 1.0,
+  "processed_row_coverage": 0.009899808610653045,
+  "processed_rows": 40817,
+  "puc_rows": 476,
+  "source_nonempty_cells": 325125,
+  "source_rows": 40817,
+  "source_tables": 8,
+  "table_rows_processed": {
+    "chemicals": 10000,
+    "function_categories": 131,
+    "functional_use": 10000,
+    "list_presence": 10000,
+    "list_presence_keywords": 170,
+    "product_composition": 10000,
+    "product_use_categories": 476,
+    "puc_attributes": 40
+  },
+  "triples": 350428
+}
