@@ -1,0 +1,37 @@
+{
+  "@context": "../../context/source.context.jsonld",
+  "@type": "dcat:Dataset",
+  "@id": "https://biobricks.ai/bricks/epa-chemexpo-rdf",
+  "dcterms:title": "EPA ChemExpo / CPDat \u2014 RDF integration",
+  "dcterms:description": "Streaming RDF (N-Triples) integration of the EPA ChemExpo / CPDat exposure evidence. It is derived entirely from the upstream `epa-chemexpo` BioBricks brick (its sole declared dependency), converting all eight ChemExpo source tables \u2014 product composition, chemicals, PUC hierarchy and attributes, functional-use records and categories, list-presence records and keyword definitions \u2014 into linked-data triples with CompTox DTXSID and CAS IRIs. The underlying data is U.S. EPA public-domain ChemExpo data with row-level third-party provenance retained.",
+  "dcterms:license": "https://www.usa.gov/government-works",
+  "biobricks:licenseName": "US Government Work (public domain, US EPA)",
+  "biobricks:licenseClass": "open",
+  "biobricks:merckCommercialUse": "permitted",
+  "biobricks:licenseEvidence": [
+    {
+      "source": "README.md",
+      "quote": "Streaming RDF integration for EPA ChemExpo/CPDat exposure evidence. ChemExpo is U.S. EPA public-domain data, with row-level third-party provenance retained.",
+      "confidence": "high"
+    },
+    {
+      "source": ".bb/dependencies.txt",
+      "quote": "epa-chemexpo",
+      "confidence": "high"
+    }
+  ],
+  "biobricks:reviewed": false,
+  "biobricks:reviewNotes": "Determined by BioBricks licensing-provenance annotation agent. This brick is a pure transform of the upstream `epa-chemexpo` brick (its only dependency in .bb/dependencies.txt), which is U.S. EPA public-domain ChemExpo/CPDat data (17 U.S.C. \u00a7 105). No new data is introduced, so the class follows the parent: open / commercial permitted. The README explicitly states 'ChemExpo is U.S. EPA public-domain data'. Same caveat as the parent: ChemExpo aggregates many third-party source documents that USEPA does not review.",
+  "dcterms:creator": "U.S. Environmental Protection Agency, Office of Research and Development",
+  "dcterms:publisher": "U.S. Environmental Protection Agency, Office of Research and Development",
+  "prov:wasDerivedFrom": [
+    {
+      "@type": "dcat:Dataset",
+      "@id": "https://biobricks.ai/bricks/epa-chemexpo",
+      "dcterms:title": "EPA ChemExpo / CPDat \u2014 Chemical and Products Database (BioBricks brick)",
+      "dcterms:license": "https://www.usa.gov/government-works",
+      "dcat:landingPage": "https://comptox.epa.gov/chemexpo/",
+      "dcterms:publisher": "U.S. Environmental Protection Agency, Office of Research and Development"
+    }
+  ]
+}
